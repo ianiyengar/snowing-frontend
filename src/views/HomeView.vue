@@ -12,7 +12,7 @@
     </div>
     <h1>All Reports</h1>
     <div v-for="report in reports" v-bind:key="report.id">
-      <h2>{{ report.location }}</h2>
+      <h2>Zip Code: {{ report.location }}</h2>
       <p>Inches: {{ report.inches }}</p>
       <p>Time: {{ report.time }}</p>
       <button v-on:click="showReport(report)">More info</button>
